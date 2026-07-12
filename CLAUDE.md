@@ -25,6 +25,7 @@
 - Markdown。冒頭に frontmatter(`created`, `tags`, `status`)を付ける
 - 日本語で書く。技術用語・コード識別子は原文のまま
 - Inbox のノートは整理時に適切なフォルダへ**移動**する(コピーではなく)
+- Inbox のノートを移動・統合・アーカイブしたら、`90_System/memo-ledger.md`(メモ台帳)の該当行を「整理済み → <行き先>(処理日)」に必ず更新する
 
 ## リモート同期(GitHub Actions と併用するため必須)
 
