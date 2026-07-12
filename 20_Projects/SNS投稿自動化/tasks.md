@@ -10,7 +10,7 @@ status: active
 
 ## MS1: n8nの投稿フローが手動実行で動作する
 - [x] 確認: 投稿先SNSを1つ決める(候補と選定理由をメモに残す) → [投稿先SNS選定.md](./投稿先SNS選定.md)
-- [ ] 調査: n8nをDocker Composeで起動する最小構成(compose.yml例)を1つ見つけて30_Tech_Notesにまとめる
+- [x] 調査: n8nをDocker Composeで起動する最小構成(compose.yml例)を1つ見つけて30_Tech_Notesにまとめる → [n8n_Docker_Compose最小構成.md](../../30_Tech_Notes/n8n_Docker_Compose最小構成.md)
 - [ ] 調査: 選定したSNSの投稿用API認証方式(APIキー取得手順)を調べて30_Tech_Notesにまとめる
 - [ ] 実装: 見つけた構成でn8nコンテナを起動し、管理画面にブラウザでアクセスできることを確認する
 - [ ] 実装: n8nでWebhook起動→SNS API呼び出しの最小ワークフローを1つ作成し、手動実行でテスト投稿が成功することを確認する(1セッションで終わらなければ複数回に分けて進める)
