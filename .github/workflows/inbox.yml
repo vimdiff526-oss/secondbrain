@@ -1,0 +1,33 @@
+# 毎朝6:00 JSTにInboxを自動整理する(Layer 3: Always-On)
+# 認証: claude setup-token で生成したトークンを Secrets の CLAUDE_CODE_OAUTH_TOKEN に登録すること
+name: inbox-process
+
+on:
+  schedule:
+    - cron: "0 21 * * *" # 21:00 UTC = 6:00 JST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  inbox:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: gitユーザー設定
+        run: |
+          git config user.name "brain-bot"
+          git config user.email "actions@users.noreply.github.com"
+
+      - name: Inbox整理を実行
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          prompt: "/inbox-process"
+          claude_args: "--model sonnet --permission-mode bypassPermissions"
+
+      - name: 結果をプッシュ(コマンド側のpushが失敗していた場合の保険)
+        run: git push origin HEAD:main || echo "プッシュ済みまたは変更なし"

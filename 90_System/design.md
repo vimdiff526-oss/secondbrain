@@ -26,24 +26,28 @@ status: draft
   - `/deep-research` — search-specialist を使った Web + brain の並列深掘り
 - [x] GitHub リポジトリへのプッシュ(`vimdiff526-oss/secondbrain` 設定済みだった)
 
-## Phase 2 — エージェントとプロジェクト管理
+## Phase 2 — エージェントとプロジェクト管理(2026-07-12 構築済み)
 
-- [ ] エージェント追加(記事の13体から必要な4体に絞る)
+- [x] エージェント追加(記事の13体から必要な4体に絞る)
   - `knowledge-explorer` — brain 内の横断検索・関連ノート発見
   - `note-writer` — 整理・要約・frontmatter 付与の実務役
-  - `socrates` — 問答で思考を深める壁打ち役
+  - `socrates` — 問答で思考を深める壁打ち役(対話専用)
   - `pm-layer` — プロジェクトの停滞検出と次の一手の提案
-- [ ] `/new-project`, `/decompose`(ゴール→マイルストーン→タスク分解 + GitHub Issue 作成)
-- [ ] `/work`(Issue 実行→完了報告→クローズ)
+- [x] `/new-project`, `/decompose`(ゴール→マイルストーン→タスク分解)
+- [x] `/work`(次の1タスク実行→tasks.md更新→作業ログ追記)
+- **設計変更**: タスク管理は GitHub Issues ではなく各プロジェクトの `tasks.md` を正とする
+  (gh CLI 未導入・オフラインでも動くため。Issue連携は必要になったら追加)
 
-## Phase 3 — 自律運用(GitHub Actions)
+## Phase 3 — 自律運用(GitHub Actions)(2026-07-12 構築済み)
 
-- [ ] `anthropics/claude-code-action` を使用。認証は `claude setup-token` で生成した
+- [x] `anthropics/claude-code-action@v1` を使用。認証は `claude setup-token` で生成した
       `CLAUDE_CODE_OAUTH_TOKEN` を Secrets に登録(APIキー不使用の現運用と一致)
-- [ ] ワークフロー
-  - 毎朝 6:00 JST — `/inbox-process` 実行、結果をコミット
-  - 毎週金曜 18:00 JST — `/weekly-review` 生成
-- [ ] ガードレール: 1実行あたり最大10ノート、削除禁止、エラー時は Issue を立てて停止
+- [x] ワークフロー(`.github/workflows/`)
+  - `inbox.yml` — 毎朝 6:00 JST に `/inbox-process`(Actions上では memos.txt 取り込みをスキップ)
+  - `weekly-review.yml` — 毎週金曜 18:00 JST に `/weekly-review`
+- [x] 同期ルール: 全コマンドが作業前 `git pull --rebase`・コミット後 `git push`(CLAUDE.md に記載)
+- [x] ガードレール: 1実行あたり最大10ノート、削除禁止、失敗時はワークフローがエラー終了(GitHubから通知メール)
+- [ ] **要ユーザー作業**: `claude setup-token` の実行と、リポジトリ Secrets への `CLAUDE_CODE_OAUTH_TOKEN` 登録
 
 ## 記事から採用しないもの(理由)
 

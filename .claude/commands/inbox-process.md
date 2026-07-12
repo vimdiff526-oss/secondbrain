@@ -8,6 +8,7 @@ description: Inboxとmemos.txtを整理し、各フォルダへ振り分ける
 
 1. `90_System/memos-imported.md` を読み、取り込み済みの memos.txt 項目番号を確認する(ファイルがなければ全項目が未取り込み)
 2. `../memos.txt` の未取り込み項目を、それぞれ1件ずつ `00_Inbox/` にMarkdownノートとして保存する(memos.txt 自体は変更しない)。取り込んだ項目番号を `90_System/memos-imported.md` に追記する
+   - `../memos.txt` が存在しない環境(GitHub Actions上での実行)では、この手順をスキップして `00_Inbox/` の処理のみ行う
 3. `00_Inbox/` の各ノートについて:
    - frontmatter(`created`, `tags`, `status`)を付与・補完する
    - 内容を読んで分類し、適切なフォルダへ**移動**する
