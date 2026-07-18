@@ -47,13 +47,13 @@ status: draft
   - `weekly-review.yml` — 毎週金曜 18:00 JST に `/weekly-review`
 - [x] 同期ルール: 全コマンドが作業前 `git pull --rebase`・コミット後 `git push`(CLAUDE.md に記載)
 - [x] ガードレール: 1実行あたり最大10ノート、削除禁止、失敗時はワークフローがエラー終了(GitHubから通知メール)
-- [ ] **要ユーザー作業**: `claude setup-token` の実行と、リポジトリ Secrets への `CLAUDE_CODE_OAUTH_TOKEN` 登録
-  - **稼働確認の調査結果(2026-07-19)**: 全44コミットの作者がユーザーのみで brain-bot のコミットが1件も無い。
-    ワークフロー2本はリモート main に存在するが、トークン未登録のため7日間一度も成功していないと判断。
-  - 対応準備: gh CLI v2.96.0 を `~/.local/bin/gh` に導入済み(sudo不要のバイナリ配置)。
-    残る手順は ①`gh auth login -p ssh -w`(GitHub認証・デバイスフロー) ②`claude setup-token`(トークン生成)
-    ③`gh secret set CLAUDE_CODE_OAUTH_TOKEN` ④`gh workflow run inbox.yml` で手動起動して成功を確認、の4つ。
-    ①②は対話認証のためユーザー実行が必要、③④は認証完了後に Claude が実行できる。
+- [x] **要ユーザー作業**: `claude setup-token` の実行と、リポジトリ Secrets への `CLAUDE_CODE_OAUTH_TOKEN` 登録
+      (**2026-07-19 完了** — inbox.yml の手動起動が成功し、レベル3の実稼働を確認)
+  - 稼働確認の経緯: 2026-07-19時点で brain-bot のコミットが0件 → トークン未登録により7日間空振りと判明。
+    Secrets登録後も2つの追加対応が必要だった(今後の同種設定の参考):
+    1. ワークフローの `permissions` に `id-token: write` が必須(claude-code-action の OIDC トークン交換)
+    2. Claude Code GitHub App(https://github.com/apps/claude)をリポジトリにインストールする必要あり
+  - 補助ツール: gh CLI v2.96.0 を `~/.local/bin/gh` に導入済み(未認証。Secrets登録・手動起動はWeb UIで代替した)
 
 ## 記事から採用しないもの(理由)
 
