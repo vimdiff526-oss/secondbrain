@@ -1,8 +1,10 @@
 ---
 created: 2026-07-12
 tags: [project, web, surf]
-status: active
+status: frozen
 ---
+
+> **凍結(2026-07-19)**: 視界をSNS投稿自動化+StockWatchに絞るため凍結。再開時は `20_Projects/` へ戻すだけでよい(判断: システム簡素化セッションにてユーザー承認済み)
 
 # サーフィンサイト アップデート
 
