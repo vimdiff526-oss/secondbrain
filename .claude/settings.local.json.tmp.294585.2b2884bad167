@@ -1,0 +1,40 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:x.com)",
+      "WebFetch(domain:api.fxtwitter.com)",
+      "Bash(curl -s \"https://api.fxtwitter.com/g_japan_ch/status/2077272869181276253\")",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); m=d['tweet']['media']['videos'][0]; print\\(m['url']\\)\")",
+      "Bash(curl -sL -o video.mp4 \"https://video.twimg.com/amplify_video/2077272683159621632/vid/avc1/1920x1080/iLT2Bez9wkIjvpo7.mp4?tag=28\")",
+      "Bash(ffmpeg -y -loglevel error -i video.mp4 -vf \"fps=1/8,scale=960:-1\" frame_%02d.jpg)",
+      "Bash(git pull *)",
+      "Bash(python3 -m py_compile server.py)",
+      "Bash(systemctl --user restart brain-office)",
+      "Bash(systemctl --user is-active brain-office)",
+      "Bash(curl -s http://localhost:8200/api/murmurs)",
+      "Bash(python3 -m json.tool)",
+      "Bash(curl -s -o /dev/null -w \"index: %{http_code}\\\\n\" http://localhost:8200/)",
+      "Bash(timeout 90 chromium --headless --disable-gpu --window-size=1400,800 --screenshot=office1.png --virtual-time-budget=20000 http://localhost:8200/)",
+      "Bash(timeout 240 chromium --headless=new --no-sandbox --disable-gpu --disable-dev-shm-usage --hide-scrollbars --window-size=1400,800 --screenshot=office1.png --virtual-time-budget=12000 http://localhost:8200/)",
+      "Bash(timeout 120 chromium --headless --no-sandbox --disable-gpu --screenshot=t.png \"data:text/html,<h1>test</h1>\")",
+      "Bash(timeout 120 chromium --headless --no-sandbox --disable-gpu --hide-scrollbars --window-size=1400,800 --screenshot=office1.png http://localhost:8200/)",
+      "Bash(timeout 120 chromium --headless --no-sandbox --disable-gpu --hide-scrollbars --window-size=1400,800 --screenshot=office1.png http://127.0.0.1:8200/)",
+      "Bash(timeout 90 chromium --headless --no-sandbox --disable-gpu --dump-dom http://127.0.0.1:8200/)",
+      "Bash(echo \"exit=$?\")",
+      "Bash(env)",
+      "Bash(timeout 90 chromium --headless --no-sandbox --disable-gpu --no-proxy-server --hide-scrollbars --window-size=1400,800 --screenshot=office1.png http://127.0.0.1:8200/)",
+      "Bash(python3 -)",
+      "Bash(timeout 180 chromium --headless --no-sandbox --disable-gpu --hide-scrollbars --window-size=1400,800 --virtual-time-budget=6500 --screenshot=office_test.png file://__TRACKED_VAR__/office_test.html)",
+      "Bash(timeout 180 chromium --headless --no-sandbox --disable-gpu --hide-scrollbars --window-size=1400,800 --virtual-time-budget=6500 --screenshot=office_test.png file://__TRACKED_VAR__/test_office.html)",
+      "Bash(git add *)",
+      "Bash(git commit -m 'tech-note: Brain Officeのつぶやき・会話機能を記録 *)",
+      "Bash(git push *)",
+      "Bash(gh auth *)",
+      "Bash(git -C /home/sloasea/lifework/secondbrain remote -v)",
+      "Bash(git config *)",
+      "Bash(git commit -m 'system: GitHub Actions稼働確認の調査結果を記録\\(botコミット0件・gh CLI導入済み\\) *)",
+      "Bash(git commit -m 'system: Phase 3\\(GitHub Actions自律運用\\)の稼働確認完了を記録 *)",
+      "Bash(git commit -m 'system: 提言2・3を実装 — 実行主体タグ〔Claude〕/〔ユーザー〕と要ユーザー作業キューを導入 *)"
+    ]
+  }
+}
