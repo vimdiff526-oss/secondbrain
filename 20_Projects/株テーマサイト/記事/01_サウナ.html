@@ -1,0 +1,722 @@
+<title>サウナ 上場企業一覧【2026年最新版】｜運営・設備・グッズの代表銘柄とPER・配当利回り・株主優待</title>
+<style>
+:root{
+  --ground:#F1F4F4;
+  --surface:#FFFFFF;
+  --sunk:#E7EDED;
+  --ink:#12262B;
+  --ink-2:#3F585E;
+  --ink-3:#7A8E93;
+  --rule:#D2DDDD;
+  --rule-2:#B3C4C5;
+  --accent:#0E7480;
+  --accent-soft:#DBECED;
+  --heat:#9A4A0A;
+  --heat-soft:#F8E9DA;
+  --cool:#0F6B8A;
+  --shadow:0 1px 2px rgba(18,38,43,.05),0 10px 30px -20px rgba(18,38,43,.35);
+  --serif:"Hiragino Mincho ProN","Yu Mincho","YuMincho","Noto Serif JP",serif;
+  --sans:"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Gothic","Noto Sans JP",system-ui,sans-serif;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0A1517;--surface:#122225;--sunk:#0E1D1F;--ink:#E6EEEE;--ink-2:#A6BABC;
+    --ink-3:#6F8689;--rule:#25383B;--rule-2:#375050;--accent:#5DC7CF;--accent-soft:#113539;
+    --heat:#E0A06C;--heat-soft:#31200F;--cool:#6FB6D2;
+    --shadow:0 1px 2px rgba(0,0,0,.45),0 12px 32px -22px rgba(0,0,0,.9);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0A1517;--surface:#122225;--sunk:#0E1D1F;--ink:#E6EEEE;--ink-2:#A6BABC;
+  --ink-3:#6F8689;--rule:#25383B;--rule-2:#375050;--accent:#5DC7CF;--accent-soft:#113539;
+  --heat:#E0A06C;--heat-soft:#31200F;--cool:#6FB6D2;
+  --shadow:0 1px 2px rgba(0,0,0,.45),0 12px 32px -22px rgba(0,0,0,.9);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);
+  font-size:16px;line-height:1.95;-webkit-font-smoothing:antialiased}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px 100px}
+.paper{background:var(--surface);border:1px solid var(--rule);border-radius:5px;
+  box-shadow:var(--shadow);padding:52px 52px 60px;margin-top:32px}
+@media(max-width:660px){.paper{padding:30px 20px 40px}.wrap{padding:0 12px 60px}}
+
+.kicker{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 14px}
+h1{font-family:var(--serif);font-weight:600;font-size:clamp(25px,4.3vw,37px);line-height:1.42;
+  margin:0 0 18px;text-wrap:balance;letter-spacing:.01em}
+.byline{font-family:var(--mono);font-size:12px;color:var(--ink-3);display:flex;flex-wrap:wrap;
+  gap:6px 16px;padding-bottom:26px;border-bottom:1px solid var(--rule);margin:0}
+h2{font-family:var(--serif);font-weight:600;font-size:clamp(20px,3vw,25px);line-height:1.55;
+  margin:60px 0 10px;padding-top:30px;border-top:1px solid var(--rule);text-wrap:balance}
+h3{font-family:var(--sans);font-size:16.5px;font-weight:700;margin:38px 0 4px;line-height:1.6;
+  display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px}
+h3 .code{font-family:var(--mono);font-size:13px;color:var(--accent);font-weight:600;
+  font-variant-numeric:tabular-nums}
+h4{font-size:14.5px;font-weight:700;margin:26px 0 4px}
+p{margin:0 0 20px;max-width:68ch}
+.lede{font-size:17.5px;color:var(--ink-2);line-height:2.05}
+strong{font-weight:700}
+em{font-style:normal;background:linear-gradient(transparent 62%,var(--accent-soft) 62%);font-weight:600}
+
+/* 目次 */
+.toc{background:var(--sunk);border:1px solid var(--rule);border-radius:4px;padding:20px 24px;margin:32px 0 8px}
+.toc h2{all:unset;font-family:var(--sans);font-size:12.5px;font-weight:700;letter-spacing:.08em;
+  color:var(--ink-3);display:block;margin-bottom:12px}
+.toc ol{margin:0;padding-left:1.3em;columns:2;column-gap:32px}
+@media(max-width:600px){.toc ol{columns:1}}
+.toc li{margin-bottom:6px;font-size:13.5px;line-height:1.7;break-inside:avoid}
+.toc a{color:var(--ink-2);text-decoration:none;border-bottom:1px solid transparent}
+.toc a:hover,.toc a:focus-visible{color:var(--accent);border-bottom-color:var(--accent)}
+
+/* 数字ハイライト */
+.figures{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1px;
+  background:var(--rule);border:1px solid var(--rule);border-radius:4px;overflow:hidden;margin:28px 0}
+.fig{background:var(--surface);padding:16px 18px}
+.fig dt{font-family:var(--mono);font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--ink-3);margin:0 0 5px}
+.fig dd{margin:0;font-family:var(--mono);font-size:25px;font-weight:600;font-variant-numeric:tabular-nums;
+  line-height:1.25;letter-spacing:-.015em}
+.fig dd .u{font-size:13px;font-weight:400;color:var(--ink-3);margin-left:2px}
+.fig .src{display:block;font-family:var(--sans);font-size:11px;color:var(--ink-3);margin-top:6px;line-height:1.55}
+
+/* 銘柄スペック */
+.spec{border:1px solid var(--rule);border-left:3px solid var(--accent);border-radius:0 4px 4px 0;
+  background:var(--sunk);margin:14px 0 22px;overflow:hidden}
+.spec-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(112px,1fr));gap:1px;background:var(--rule)}
+.spec-row > div{background:var(--surface);padding:11px 14px}
+.spec-row dt{font-family:var(--mono);font-size:10px;letter-spacing:.07em;text-transform:uppercase;
+  color:var(--ink-3);margin:0 0 3px}
+.spec-row dd{margin:0;font-family:var(--mono);font-size:16.5px;font-variant-numeric:tabular-nums;line-height:1.4}
+.spec-row dd.na{color:var(--ink-3);font-size:13px}
+.spec-yutai{padding:12px 15px;font-size:13.5px;line-height:1.8;background:var(--sunk);
+  border-top:1px solid var(--rule)}
+.spec-yutai .lbl{font-family:var(--mono);font-size:10px;letter-spacing:.07em;text-transform:uppercase;
+  color:var(--heat);background:var(--heat-soft);padding:2px 7px;border-radius:2px;margin-right:9px;
+  white-space:nowrap}
+.spec-yutai.none{color:var(--ink-3)}
+.spec-yutai.none .lbl{color:var(--ink-3);background:var(--sunk);border:1px solid var(--rule)}
+
+/* 表 */
+.tbl{overflow-x:auto;border:1px solid var(--rule);border-radius:4px;margin:26px 0 10px}
+table{border-collapse:collapse;width:100%;min-width:720px;font-size:13.5px}
+th,td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--rule);vertical-align:top}
+thead th{background:var(--sunk);font-family:var(--mono);font-size:10.5px;letter-spacing:.07em;
+  text-transform:uppercase;color:var(--ink-3);font-weight:600;white-space:nowrap;position:sticky;top:0}
+tbody tr:last-child td{border-bottom:none}
+tbody tr:hover{background:var(--accent-soft)}
+td.num{font-family:var(--mono);font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+td.code{font-family:var(--mono);color:var(--ink-3);font-variant-numeric:tabular-nums;white-space:nowrap}
+td.nm{font-weight:600;white-space:nowrap}
+.tag{font-size:11px;padding:2px 7px;border-radius:2px;white-space:nowrap;display:inline-block}
+.t-run{background:var(--accent-soft);color:var(--accent)}
+.t-eq{background:var(--heat-soft);color:var(--heat)}
+.t-gd{background:var(--sunk);color:var(--ink-2);border:1px solid var(--rule)}
+.cap{font-size:12.5px;color:var(--ink-3);line-height:1.75;margin:6px 0 24px}
+
+/* 注意ボックス */
+.callout{border:1px solid var(--rule);border-left:3px solid var(--heat);background:var(--heat-soft);
+  border-radius:0 4px 4px 0;padding:18px 20px;margin:26px 0}
+.callout h4{margin:0 0 8px;font-size:14.5px}
+.callout p{margin:0 0 12px;font-size:14.5px;color:var(--ink-2)}
+.callout p:last-child{margin-bottom:0}
+.point{border:1px solid var(--rule);border-radius:4px;background:var(--sunk);padding:18px 20px;margin:20px 0}
+.point h4{margin:0 0 6px;font-size:15px;color:var(--accent)}
+.point p{margin:0;font-size:14.5px;color:var(--ink-2)}
+ul{margin:0 0 20px;padding-left:1.25em;max-width:68ch}
+li{margin-bottom:9px}
+.foot{margin-top:56px;padding-top:24px;border-top:2px solid var(--rule-2);font-size:12.5px;
+  color:var(--ink-3);line-height:1.9}
+.foot h4{color:var(--ink-2);margin-bottom:8px}
+a{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+code{font-family:var(--mono);font-size:.9em;background:var(--sunk);padding:1px 5px;border-radius:2px}
+</style>
+
+<div class="wrap">
+<article class="paper">
+
+<p class="kicker">テーマ株ガイド ／ 生活実感クラスタ</p>
+<h1>サウナ 上場企業一覧【2026年最新版】<br>運営・設備・グッズの代表銘柄とPER・配当利回り・株主優待</h1>
+<p class="byline">
+  <span>公開 2026-08-21</span>
+  <span>株価・指標の基準日 2026-08-21</span>
+  <span>掲載 11銘柄</span>
+</p>
+
+<nav class="toc">
+  <h2>もくじ</h2>
+  <ol>
+    <li><a href="#s1">サウナの上場企業とは？市場規模と3層構造</a></li>
+    <li><a href="#s2">サウナ 上場企業【運営編】</a></li>
+    <li><a href="#s3">サウナ 上場企業【設備・空調編】</a></li>
+    <li><a href="#s4">サウナ 上場企業【グッズ・アパレル編】</a></li>
+    <li><a href="#s5">PER・配当利回り・株主優待 一覧比較</a></li>
+    <li><a href="#s6">テーマ株リストの落とし穴</a></li>
+    <li><a href="#s7">投資判断で見るべき3つのポイント</a></li>
+    <li><a href="#s8">まとめ</a></li>
+  </ol>
+</nav>
+
+<h2 id="s1">サウナの上場企業とは？市場規模と3層構造</h2>
+
+<p class="lede">
+「ととのう」という言葉が一般語になり、サウナは一部の愛好家の趣味から日常の習慣へと移った。
+ところが、いざ株式市場でサウナ銘柄を探そうとすると、多くの人がここで手が止まる。
+<em>「サウナ株式会社」に相当する上場企業が、事実上ひとつも存在しない</em>からだ。
+</p>
+
+<p>
+これはサウナというビジネスの性質そのものに由来する。サウナは単体で完結する商品ではなく、
+温浴施設・ホテル・フィットネスクラブといった「箱」の中に置かれる設備であり、
+その箱を運営する会社、熱と冷を作る機械を納める会社、身につけるものを売る会社に分かれて存在している。
+つまりサウナ銘柄を探すという行為は、正確には<strong>「サウナ需要が売上のどこに、どれくらいの比率で現れるか」を追う作業</strong>になる。
+</p>
+
+<h3>まず市場の大きさを押さえる</h3>
+
+<p>
+日本サウナ・温冷浴総合研究所が全国1万人を対象に実施した調査によれば、
+年1回以上サウナに入る「ライトサウナー」まで含めた日本のサウナー人口は約1,681万人と推計されている。
+このうち月1回以上の「ミドルサウナー」が約548万人、月4回以上の「ヘビーサウナー」が約288万人。
+成人人口のおよそ6人に1人が、年に一度はサウナに入っている計算になる。
+</p>
+
+<div class="figures">
+  <div class="fig"><dt>サウナー人口(推計)</dt><dd>1,681<span class="u">万人</span></dd>
+    <span class="src">年1回以上。日本サウナ・温冷浴総合研究所の全国1万人調査</span></div>
+  <div class="fig"><dt>うちヘビーサウナー</dt><dd>288<span class="u">万人</span></dd>
+    <span class="src">月4回以上。施設の売上を支える中核層</span></div>
+  <div class="fig"><dt>市場規模(推計)</dt><dd>約2,000<span class="u">億円</span></dd>
+    <span class="src">2024〜2025年時点の各種推計。定義により幅がある</span></div>
+  <div class="fig"><dt>掲載企業の合計時価総額</dt><dd>8.0<span class="u">兆円</span></dd>
+    <span class="src">本記事の11銘柄合計。うちダイキン1社で6.1兆円</span></div>
+</div>
+
+<p>
+ここで注意したいのは、市場規模の約2,000億円という数字と、掲載企業の合計時価総額8.0兆円のあいだにある、
+<strong>40倍という落差</strong>だ。この落差こそがサウナ銘柄の本質を表している。
+サウナ市場そのものは、上場企業の規模から見れば決して大きくない。
+にもかかわらず時価総額が巨大なのは、掲載企業の大半にとってサウナが<strong>本業のごく一部</strong>にすぎないからである。
+</p>
+
+<h3>サウナを構成する3つの層</h3>
+
+<p>
+本記事では、サウナに関わる上場企業を次の3層に分けて整理する。
+この分け方は、投資家がその銘柄に何を期待できるかを決定づける。
+</p>
+
+<ul>
+  <li><strong>運営層</strong> — 温浴施設・ホテル・フィットネスクラブを運営し、サウナを収益源として持つ会社。
+  サウナ需要がもっとも素直に業績へ反映されるが、企業規模は総じて小さい</li>
+  <li><strong>設備層</strong> — サウナ室の熱、水風呂の冷、外気浴スペースの換気を作る機械を納める会社。
+  技術的にはサウナの心臓部だが、売上に占めるサウナの比率は小さく、業績は建設・空調・厨房といった別の需要で動く</li>
+  <li><strong>グッズ層</strong> — サウナハット、ポンチョ、タオルなど身につけるものを売る会社。
+  ブームの温度をもっとも敏感に映すが、上場企業として純粋にここを担う会社はほとんどない</li>
+</ul>
+
+<p>
+この3層は、期待できるリターンの性質がまったく異なる。
+運営層は<strong>サウナブームに直接賭ける</strong>投資であり、設備層は<strong>サウナを含む広い設備需要に賭ける</strong>投資、
+グッズ層は<strong>ブランド力に賭ける</strong>投資になる。同じ「サウナ関連銘柄」という言葉でくくると、この違いが見えなくなる。
+</p>
+
+<h2 id="s2">サウナ 上場企業【運営編】</h2>
+
+<p>
+運営層は、サウナ需要が売上に直結する唯一の層である。一方で、
+温浴事業は<strong>装置産業であると同時に労働集約型</strong>という重い性質を持つ。
+土地と建物への初期投資が大きく、開業後も清掃・受付・熱源の維持に人手がかかり続ける。
+このため、ブームが来ても利益率が跳ね上がりにくい。運営層を見るときは、この構造を前提に置く必要がある。
+</p>
+
+<h3><span class="code">3521</span>テルマー湯ホールディングス</h3>
+<p>
+新宿・歌舞伎町の「テルマー湯」を中核とする、温浴施設運営に特化した企業。
+上場企業のなかで<strong>もっともサウナ事業への純度が高い一社</strong>といえる。
+株主優待の内容が「新宿店・西麻布店の招待券」であることからも、事業の中心がどこにあるかは明快だ。
+</p>
+<p>
+時価総額は約41億円と小さく、株価も157円と低位にある。PBRは0.86倍で解散価値を下回る水準。
+一方でPERは23.05倍とやや高く、これは利益水準がまだ薄いことを示している。
+配当利回り3.18%は掲載11銘柄のなかでも上位で、<strong>低位株かつ高利回りかつ優待あり</strong>という
+個人投資家好みの条件が揃う。ただし規模が小さいぶん、
+新宿という一等地の集客に業績が大きく依存する点は意識しておきたい。
+</p>
+<dl class="spec">
+  <div class="spec-row">
+    <div><dt>株価</dt><dd>157<span class="u">円</span></dd></div>
+    <div><dt>PER(予)</dt><dd>23.05<span class="u">倍</span></dd></div>
+    <div><dt>PBR</dt><dd>0.86<span class="u">倍</span></dd></div>
+    <div><dt>配当利回り(予)</dt><dd>3.18<span class="u">%</span></dd></div>
+    <div><dt>時価総額</dt><dd>41.6<span class="u">億円</span></dd></div>
+  </div>
+  <div class="spec-yutai"><span class="lbl">株主優待</span>
+    300株以上で「テルマー湯」新宿店・西麻布店の招待券が各1枚(1,200株で各2枚、12,500株で各3枚)。権利確定は3月末。</div>
+</dl>
+
+<h3><span class="code">2340</span>極楽湯ホールディングス</h3>
+<p>
+「店舗数日本一の風呂屋」を掲げる、日帰り温浴施設の代表格。
+郊外ロードサイド型の「極楽湯」に加え、都市型の複合スパ施設「RAKU SPA」を展開する。
+サウナだけでなく岩盤浴・食事・コミックコーナーを組み合わせ、
+<strong>滞在時間を伸ばして客単価を上げる</strong>のがこの業態の基本戦略で、
+サウナブームはその滞在動機を強める方向に働いている。
+</p>
+<p>
+かつて注力していた中国事業は連結から除外され、現在は国内が主戦場となっている。
+PBRは3.65倍とやや高く、市場が温浴専業としての希少性を評価している面がある一方、
+配当利回りは1.17%と低い。<strong>この銘柄の魅力は配当ではなく優待にある</strong>と考えたほうが実態に近い。
+ただし優待には1年以上の継続保有条件が付くため、権利確定月に買っても初年度は受け取れない点は要注意だ。
+</p>
+<dl class="spec">
+  <div class="spec-row">
+    <div><dt>株価</dt><dd>515<span class="u">円</span></dd></div>
+    <div><dt>PER(予)</dt><dd class="na">非開示</dd></div>
+    <div><dt>PBR</dt><dd>3.65<span class="u">倍</span></dd></div>
+    <div><dt>配当利回り(予)</dt><dd>1.17<span class="u">%</span></dd></div>
+    <div><dt>時価総額</dt><dd>163.8<span class="u">億円</span></dd></div>
+  </div>
+  <div class="spec-yutai"><span class="lbl">株主優待</span>
+    100株以上・継続1年以上で無料入浴券4枚(2年以上で6枚)。300株で6枚、500株で10枚、5,000株で20枚。権利確定は9月末。
+    <strong>連続3回以上の株主名簿記載が条件</strong>のため、実際に受け取れるまで1年以上かかる。</div>
+</dl>
+
+<h3><span class="code">9616</span>共立メンテナンス</h3>
+<p>
+ビジネスホテル「ドーミーイン」と学生寮事業を柱とする企業。
+ドーミーインは<strong>全室に大浴場とサウナを備える</strong>という点で他のビジネスホテルと明確に差別化されており、
+出張者がホテルを選ぶ理由そのものになっている。サウナが客室単価と稼働率を押し上げる構造が、
+もっともはっきり数字に出ている会社といえる。
+</p>
+<p>
+時価総額3,177億円は掲載企業の運営層で最大。PER17.59倍は業績への期待を織り込んだ水準で、
+配当利回り1.32%は控えめだが、優待の内容が厚い。
+年2回の権利確定で割引券とリゾートホテル優待券の両方が届き、3年以上の継続保有でさらに上乗せされる。
+<strong>優待の実質価値まで含めると利回りの見え方が変わる</strong>典型例である。
+</p>
+<dl class="spec">
+  <div class="spec-row">
+    <div><dt>株価</dt><dd>3,482<span class="u">円</span></dd></div>
+    <div><dt>PER(予)</dt><dd>17.59<span class="u">倍</span></dd></div>
+    <div><dt>PBR</dt><dd>2.16<span class="u">倍</span></dd></div>
+    <div><dt>配当利回り(予)</dt><dd>1.32<span class="u">%</span></dd></div>
+    <div><dt>時価総額</dt><dd>3,177<span class="u">億円</span></dd></div>
+  </div>
+  <div class="spec-yutai"><span class="lbl">株主優待</span>
+    100株以上で割引券2,000円分＋リゾートホテル優待券1枚(年2回・3月末/9月末)。
+    3年以上の継続保有で3月末にさらに2,000円分を追加。保有株数に応じて増額し、1,000株では16,000円分＋3枚。</div>
+</dl>
+
+<h3><span class="code">4801</span>セントラルスポーツ</h3>
+<p>
+スポーツクラブ大手の一角。フィットネスクラブにおける浴室・サウナは、
+一見すると付帯設備だが、実際には<strong>会員の継続率を左右する中核機能</strong>である。
+運動そのものを目的にせず「サウナに入るついでに少し身体を動かす」層の存在が、
+コロナ禍以降のフィットネス業界を支えてきた側面がある。
+</p>
+<p>
+PBR1.05倍は掲載企業のなかで低い部類で、資産価値に近い水準まで株価が落ち着いている。
+PER18.88倍、配当利回り1.61%。
+優待は入館無料券が年2回届く形で、<strong>優待券がそのままサウナ利用券になる</strong>という点で
+サウナ好きの株主にとっては使い勝手がよい。
+</p>
+<dl class="spec">
+  <div class="spec-row">
+    <div><dt>株価</dt><dd>2,478<span class="u">円</span></dd></div>
+    <div><dt>PER(予)</dt><dd>18.88<span class="u">倍</span></dd></div>
+    <div><dt>PBR</dt><dd>1.05<span class="u">倍</span></dd></div>
+    <div><dt>配当利回り(予)</dt><dd>1.61<span class="u">%</span></dd></div>
+    <div><dt>時価総額</dt><dd>284.1<span class="u">億円</span></dd></div>
+  </div>
+  <div class="spec-yutai"><span class="lbl">株主優待</span>
+    100株以上で優待券3枚(年2回・3月末/9月末)。1枚で施設入館1回無料、同時来館2名まで利用可。
+    200株で6枚。ショップ商品20%割引などの特典も付帯。</div>
+</dl>
+
+<h3><span class="code">2378</span>ルネサンス</h3>
+<p>
+同じくスポーツクラブ大手。近年は法人向けの健康経営支援や高齢者介護予防にも事業を広げており、
+フィットネス一本足からの脱却を進めている。サウナとの関係はセントラルスポーツと同様、
+浴室設備が会員継続の理由になるという構造だ。
+</p>
+<p>
+注意したいのはPER40.41倍という水準で、これは掲載11銘柄で突出して高い。
+利益がまだ回復途上にあることを示唆しており、
+<strong>「サウナ関連だから買う」という理由で選ぶには割高感がある</strong>。
+優待は100株で2枚、以降100株ごとに2枚追加、500株以上で一律10枚と、
+中規模保有で効率がよい設計になっている。
+</p>
+<dl class="spec">
+  <div class="spec-row">
+    <div><dt>株価</dt><dd>1,068<span class="u">円</span></dd></div>
+    <div><dt>PER(予)</dt><dd>40.41<span class="u">倍</span></dd></div>
+    <div><dt>PBR</dt><dd>2.11<span class="u">倍</span></dd></div>
+    <div><dt>配当利回り(予)</dt><dd>1.22<span class="u">%</span></dd></div>
+    <div><dt>時価総額</dt><dd>228.3<span class="u">億円</span></dd></div>
+  </div>
+  <div class="spec-yutai"><span class="lbl">株主優待</span>
+    100株以上で優待券2枚、以降100株ごとに2枚追加、500株以上で一律10枚(年2回・3月末/9月末)。
+    1枚で施設利用無料、オンラインショップ15%割引なども付帯。</div>
+</dl>
+
+<h3><span class="code">3286</span>トラストホールディングス</h3>
+<p>
+九州を地盤とする駐車場運営会社でありながら、温浴施設も手がけるという珍しい構成の企業。
+福岡県那珂川市の「那珂川清滝」、山口県下関市の「和楽の湯 下関せいりゅう」などを運営する。
+業種分類は不動産業であり、<strong>温浴は事業ポートフォリオの一角</strong>という位置づけになる。
+</p>
+<p>
+PBR7.60倍は掲載企業で突出して高く、資産の軽い駐車場ビジネスの特性が表れている。
+時価総額46億円と小型で、流動性の面では注意が必要。
+優待は温浴施設の利用券ではなく<strong>九州の特産品5,000円相当</strong>で、
+300株必要な点を含め、サウナ目的というより優待そのものを狙う銘柄と考えたほうがよい。
+</p>
+<dl class="spec">
+  <div class="spec-row">
+    <div><dt>株価</dt><dd>891<span class="u">円</span></dd></div>
+    <div><dt>PER(予)</dt><dd>17.25<span class="u">倍</span></dd></div>
+    <div><dt>PBR</dt><dd>7.60<span class="u">倍</span></dd></div>
+    <div><dt>配当利回り(予)</dt><dd>2.02<span class="u">%</span></dd></div>
+    <div><dt>時価総額</dt><dd>46.4<span class="u">億円</span></dd></div>
+  </div>
+  <div class="spec-yutai"><span class="lbl">株主優待</span>
+    300株以上で九州の特産品5,000円相当を選択(もつ鍋、佐賀牛、関サバ・関アジ、あまおう等)。権利確定は6月末。</div>
+</dl>
+
+<h2 id="s3">サウナ 上場企業【設備・空調編】</h2>
+
+<p>
+サウナ室の高温、水風呂の低温、外気浴スペースの換気。
+体験としては特別なこの3つも、技術的には<strong>既存の空調・給湯・冷凍機の応用</strong>でしかない。
+そのため設備層には、サウナのために作られた会社ではなく、
+もともと別の需要で成長してきた大手が並ぶことになる。
+</p>
+
+<div class="callout">
+  <h4>業界最大手が上場していないという事実</h4>
+  <p>
+  日本のサウナ設備を語るうえで避けて通れないのが、1947年創業のメトス(METOS)である。
+  ロウリュやテントサウナを日本に広めた立役者であり、
+  ストーブ「iki」は現在のサウナブームの火付け役とされる。
+  だが同社は<strong>上場企業ではない</strong>。
+  </p>
+  <p>
+  つまり、サウナの「熱そのもの」に投資する手段は株式市場に存在しない。
+  設備層の銘柄を買うということは、正確にはサウナではなく
+  空調・給湯・厨房という広い設備需要を買うことになる。この点を取り違えると、
+  サウナブームが続いているのに株価が動かない理由が理解できなくなる。
+  </p>
+</div>
+
+<h3><span class="code">6367</span>ダイキン工業</h3>
+<p>
+言うまでもなく世界最大級の空調メーカー。掲載企業のなかで時価総額6.1兆円と桁が違う。
+サウナ室の温度管理、外気浴スペースの空調、施設全体の換気設備において
+同社の製品が使われる場面は多いが、<strong>連結売上に占めるサウナ関連の比率はほぼ計測不能なレベル</strong>である。
+</p>
+<p>
+株価は世界の空調需要、とくに北米・欧州のヒートポンプ需要と為替で動く。
+PER21.27倍、配当利回り1.74%、株主優待はなし。
+1株20,700円のため単元(100株)購入には約207万円が必要で、個人投資家にとっては重い。
+<strong>サウナ銘柄としてこの株を買う合理性はほとんどない</strong>と言い切ってよい。
+テーマ株リストに載っていても、その理由まで確認すべきだという好例である。
+</p>
+<dl class="spec">
+  <div class="spec-row">
+    <div><dt>株価</dt><dd>20,700<span class="u">円</span></dd></div>
+    <div><dt>PER(予)</dt><dd>21.27<span class="u">倍</span></dd></div>
+    <div><dt>PBR</dt><dd>1.93<span class="u">倍</span></dd></div>
+    <div><dt>配当利回り(予)</dt><dd>1.74<span class="u">%</span></dd></div>
+    <div><dt>時価総額</dt><dd>6.07<span class="u">兆円</span></dd></div>
+  </div>
+  <div class="spec-yutai none"><span class="lbl">優待なし</span>株主優待制度の設定はない。</div>
+</dl>
+
+<h3><span class="code">5943</span>ノーリツ</h3>
+<p>
+給湯器の国内大手。温浴施設にとって給湯設備は事業の生命線であり、
+大量の湯を安定して供給できなければ営業そのものが成り立たない。
+サウナブームによる温浴施設の新設・改装は、同社にとって業務用給湯需要の追い風となる。
+</p>
+<p>
+注目すべきは指標面で、<strong>PER12.90倍・PBR0.78倍・配当利回り3.87%</strong>という組み合わせ。
+配当利回りは掲載11銘柄で最高であり、PBRは1倍を割っている。
+サウナというテーマを抜きにしても、バリュー株として検討対象になりうる水準にある。
+一方、業績の主軸は住宅用給湯器であり、住宅着工件数の影響を強く受ける点は理解しておきたい。株主優待はない。
+</p>
+<dl class="spec">
+  <div class="spec-row">
+    <div><dt>株価</dt><dd>2,427<span class="u">円</span></dd></div>
+    <div><dt>PER(予)</dt><dd>12.90<span class="u">倍</span></dd></div>
+    <div><dt>PBR</dt><dd>0.78<span class="u">倍</span></dd></div>
+    <div><dt>配当利回り(予)</dt><dd>3.87<span class="u">%</span></dd></div>
+    <div><dt>時価総額</dt><dd>1,178<span class="u">億円</span></dd></div>
+  </div>
+  <div class="spec-yutai none"><span class="lbl">優待なし</span>株主優待制度の設定はない。</div>
+</dl>
+
+<h3><span class="code">6459</span>だいわ(旧・大和冷機工業)</h3>
+<p>
+業務用冷凍冷蔵機器のメーカー。サウナとの接点は<strong>水風呂のチラー(冷却装置)</strong>である。
+近年のサウナ愛好家は水風呂の温度にきわめて敏感で、
+「シングル」と呼ばれる10℃未満の水風呂を実現するには本格的な冷却設備が要る。
+水風呂の質が施設の評価を決める時代になったことで、この領域の需要は静かに伸びている。
+</p>
+<p>
+同社は<strong>2026年7月1日付で商号を「大和冷機工業株式会社」から「だいわ株式会社」に変更した</strong>。
+冷機中心の事業から、熱機を含む総合厨房メーカーへ転換する意思表示である。
+テーマ株リストや証券会社の画面では旧社名のまま表示されている場合があるため、
+銘柄を探す際は注意したい。PER14.82倍、配当利回り3.85%とノーリツに近い水準で、こちらも優待はない。
+</p>
+<dl class="spec">
+  <div class="spec-row">
+    <div><dt>株価</dt><dd>1,688<span class="u">円</span></dd></div>
+    <div><dt>PER(予)</dt><dd>14.82<span class="u">倍</span></dd></div>
+    <div><dt>PBR</dt><dd>1.16<span class="u">倍</span></dd></div>
+    <div><dt>配当利回り(予)</dt><dd>3.85<span class="u">%</span></dd></div>
+    <div><dt>時価総額</dt><dd>873.0<span class="u">億円</span></dd></div>
+  </div>
+  <div class="spec-yutai none"><span class="lbl">優待なし</span>株主優待制度の設定はない。</div>
+</dl>
+
+<h3><span class="code">5332</span>TOTO</h3>
+<p>
+衛生陶器の国内最大手。温浴施設における洗い場、シャワー、トイレなどの水回り設備を担う。
+サウナ施設のリニューアルにおいて水回りの刷新は必須項目であり、
+施設間の競争が激しくなるほど改装需要が生まれる構造にある。
+</p>
+<p>
+PER22.70倍、配当利回り1.89%。株主優待は自社商品カタログからの選択制で、
+100株で約63.5万円の投資額が必要になる。
+サウナというより<strong>住宅設備・インバウンド関連の大型株</strong>として捉えるのが実態に近い。
+</p>
+<dl class="spec">
+  <div class="spec-row">
+    <div><dt>株価</dt><dd>6,351<span class="u">円</span></dd></div>
+    <div><dt>PER(予)</dt><dd>22.70<span class="u">倍</span></dd></div>
+    <div><dt>PBR</dt><dd>1.95<span class="u">倍</span></dd></div>
+    <div><dt>配当利回り(予)</dt><dd>1.89<span class="u">%</span></dd></div>
+    <div><dt>時価総額</dt><dd>1.06<span class="u">兆円</span></dd></div>
+  </div>
+  <div class="spec-yutai"><span class="lbl">株主優待</span>
+    100株以上で株主限定カタログより自社商品等を選択。権利確定は3月末。</div>
+</dl>
+
+<h2 id="s4">サウナ 上場企業【グッズ・アパレル編】</h2>
+
+<p>
+サウナハット、サウナポンチョ、専用タオル、そして「ととのいイス」。
+サウナ体験を構成する道具は近年急速に商品化が進んだが、
+この領域を担う企業の多くは<strong>非上場のスタートアップ</strong>である。
+ブームの初期に立ち上がった専業ブランドが市場を押さえており、
+上場企業が参入しても後発になるという構図がある。
+</p>
+
+<h3><span class="code">8111</span>ゴールドウイン</h3>
+<p>
+THE NORTH FACEの日本事業を展開するアパレル企業。
+アウトドアブランドとサウナは、外気浴という共通項を通じて親和性が高い。
+サウナ後の外気浴で羽織るアウターやタオル類は、
+機能性アパレルの延長線上にある商品カテゴリであり、
+<strong>ライフスタイル領域の拡張としてサウナ需要を取り込める</strong>位置にいる。
+</p>
+<p>
+指標面ではPER11.43倍と掲載企業で最も低く、配当利回り3.27%も高い水準。
+優待も年2回あり、3月末は商品(Tシャツやタオルセット)、9月末はオンラインストアの割引クーポンで、
+100株保有で15%、3年以上の継続保有かつ1,200株以上で最大40%割引まで拡大する。
+<strong>優待の実用性という点では掲載企業のなかで屈指</strong>といえる。
+</p>
+<dl class="spec">
+  <div class="spec-row">
+    <div><dt>株価</dt><dd>2,139<span class="u">円</span></dd></div>
+    <div><dt>PER(予)</dt><dd>11.43<span class="u">倍</span></dd></div>
+    <div><dt>PBR</dt><dd>2.31<span class="u">倍</span></dd></div>
+    <div><dt>配当利回り(予)</dt><dd>3.27<span class="u">%</span></dd></div>
+    <div><dt>時価総額</dt><dd>3,045<span class="u">億円</span></dd></div>
+  </div>
+  <div class="spec-yutai"><span class="lbl">株主優待</span>
+    3月末:100株以上でTシャツ／THE NORTH FACEコンフォートタオル3点セット／国立公園基金への寄付から選択。
+    9月末:オンラインストア割引クーポン(100株15%、300株20〜25%、1,200株30〜40%)。継続保有期間で割引率が上昇。</div>
+</dl>
+
+<h2 id="s5">PER・配当利回り・株主優待 一覧比較</h2>
+
+<p>
+ここまでの11銘柄を一覧にまとめる。株価および指標は<strong>2026年8月21日時点</strong>のもので、
+PERと配当利回りはいずれも会社予想ベースである。
+</p>
+
+<div class="tbl">
+<table>
+<thead>
+<tr><th>コード</th><th>銘柄</th><th>層</th><th>市場</th><th>株価</th><th>PER</th><th>PBR</th><th>配当利回り</th><th>時価総額</th><th>優待</th></tr>
+</thead>
+<tbody>
+<tr><td class="code">3521</td><td class="nm">テルマー湯HD</td><td><span class="tag t-run">運営</span></td><td>STD</td><td class="num">157</td><td class="num">23.05</td><td class="num">0.86</td><td class="num">3.18%</td><td class="num">41.6億</td><td>温浴招待券</td></tr>
+<tr><td class="code">2340</td><td class="nm">極楽湯HD</td><td><span class="tag t-run">運営</span></td><td>STD</td><td class="num">515</td><td class="num">—</td><td class="num">3.65</td><td class="num">1.17%</td><td class="num">163.8億</td><td>入浴券</td></tr>
+<tr><td class="code">9616</td><td class="nm">共立メンテナンス</td><td><span class="tag t-run">運営</span></td><td>PRM</td><td class="num">3,482</td><td class="num">17.59</td><td class="num">2.16</td><td class="num">1.32%</td><td class="num">3,177億</td><td>割引券＋ホテル券</td></tr>
+<tr><td class="code">4801</td><td class="nm">セントラルスポーツ</td><td><span class="tag t-run">運営</span></td><td>PRM</td><td class="num">2,478</td><td class="num">18.88</td><td class="num">1.05</td><td class="num">1.61%</td><td class="num">284.1億</td><td>入館無料券</td></tr>
+<tr><td class="code">2378</td><td class="nm">ルネサンス</td><td><span class="tag t-run">運営</span></td><td>PRM</td><td class="num">1,068</td><td class="num">40.41</td><td class="num">2.11</td><td class="num">1.22%</td><td class="num">228.3億</td><td>施設利用券</td></tr>
+<tr><td class="code">3286</td><td class="nm">トラストHD</td><td><span class="tag t-run">運営</span></td><td>STD</td><td class="num">891</td><td class="num">17.25</td><td class="num">7.60</td><td class="num">2.02%</td><td class="num">46.4億</td><td>九州特産品</td></tr>
+<tr><td class="code">6367</td><td class="nm">ダイキン工業</td><td><span class="tag t-eq">設備</span></td><td>PRM</td><td class="num">20,700</td><td class="num">21.27</td><td class="num">1.93</td><td class="num">1.74%</td><td class="num">6.07兆</td><td>なし</td></tr>
+<tr><td class="code">5943</td><td class="nm">ノーリツ</td><td><span class="tag t-eq">設備</span></td><td>PRM</td><td class="num">2,427</td><td class="num">12.90</td><td class="num">0.78</td><td class="num">3.87%</td><td class="num">1,178億</td><td>なし</td></tr>
+<tr><td class="code">6459</td><td class="nm">だいわ</td><td><span class="tag t-eq">設備</span></td><td>PRM</td><td class="num">1,688</td><td class="num">14.82</td><td class="num">1.16</td><td class="num">3.85%</td><td class="num">873.0億</td><td>なし</td></tr>
+<tr><td class="code">5332</td><td class="nm">TOTO</td><td><span class="tag t-eq">設備</span></td><td>PRM</td><td class="num">6,351</td><td class="num">22.70</td><td class="num">1.95</td><td class="num">1.89%</td><td class="num">1.06兆</td><td>自社商品</td></tr>
+<tr><td class="code">8111</td><td class="nm">ゴールドウイン</td><td><span class="tag t-gd">グッズ</span></td><td>PRM</td><td class="num">2,139</td><td class="num">11.43</td><td class="num">2.31</td><td class="num">3.27%</td><td class="num">3,045億</td><td>商品＋割引券</td></tr>
+</tbody>
+</table>
+</div>
+<p class="cap">
+株価・PER(会社予想)・PBR・配当利回り(会社予想)・時価総額はいずれも2026年8月21日時点。
+極楽湯HDのPERは会社予想が開示されていないため「—」とした。
+PRM＝東証プライム、STD＝東証スタンダード。
+</p>
+
+<h4>この表から読み取れること</h4>
+
+<p>
+一覧にすると、<strong>配当利回りの上位3社がいずれも「サウナが本業ではない」会社</strong>だと分かる。
+ノーリツ3.87%、だいわ3.85%、ゴールドウイン3.27%。
+いずれも給湯器・厨房機器・アパレルという確立した本業を持ち、サウナはその一部でしかない。
+</p>
+<p>
+逆に、サウナへの純度が高い運営層は配当利回りが総じて低い。
+テルマー湯HDの3.18%が例外的に高いものの、
+極楽湯HD 1.17%、共立メンテナンス 1.32%、ルネサンス 1.22%と1%台が並ぶ。
+温浴事業が設備投資を必要とし続けるため、利益を配当に回しにくい構造がここに表れている。
+</p>
+<p>
+つまり<strong>インカム(配当)を求めるなら設備層、体験(優待)を求めるなら運営層</strong>という
+きれいな役割分担が成立している。この2つを混同したまま「サウナ関連銘柄」を選ぶと、
+期待した性質と違うものを買ってしまうことになる。
+</p>
+
+<h4>優待でサウナに入れる銘柄は3つ</h4>
+<p>
+優待券がそのまま入浴・入館に使えるのは、
+<strong>テルマー湯HD(3521)・極楽湯HD(2340)・セントラルスポーツ(4801)</strong>の3社である。
+ルネサンス(2378)も施設利用券が使えるが、フィットネスクラブの利用が前提となる。
+共立メンテナンス(9616)の優待はドーミーインの宿泊に充てる形になるため、
+サウナ単体ではなく宿泊とセットでの利用になる。
+</p>
+<p>
+なかでも投資額あたりの効率がよいのはテルマー湯HDで、
+300株でも投資額は約4.7万円にとどまる。
+一方、極楽湯HDは100株(約5.2万円)から優待対象になるものの、
+<strong>1年以上の継続保有が条件</strong>である点を必ず確認しておきたい。
+</p>
+
+<h2 id="s6">テーマ株リストの落とし穴</h2>
+
+<p>
+「サウナ関連銘柄」を検索すると、複数の株式情報サイトがテーマ別の銘柄一覧を提供している。
+しかし、これらのリストをそのまま信用するのは危険である。理由は2つある。
+</p>
+
+<div class="callout">
+  <h4>すでに事業から撤退している会社が残っている</h4>
+  <p>
+  代表例がコシダカホールディングス(2157)だ。同社は日帰り温泉施設「箕郷温泉まねきの湯」を運営しており、
+  長らくサウナ・温浴のテーマ株として扱われてきた。
+  だが同社は2025年10月に温浴施設の売却を発表し、<strong>同年11月30日の閉館をもって温浴事業から撤退している</strong>。
+  </p>
+  <p>
+  現在のコシダカHDはカラオケ「まねきねこ」を中核とする企業であり、
+  優待内容もカラオケ店で使える優待券である。
+  にもかかわらず、テーマ株リストや過去記事には温浴関連として残り続けている。
+  <strong>本記事が運営編から同社を除外したのはこのためだ。</strong>
+  </p>
+</div>
+
+<div class="callout">
+  <h4>関係の薄さが説明されないまま並んでいる</h4>
+  <p>
+  ある大手情報サイトの「スーパー銭湯」テーマには、東京電力ホールディングス、中国電力、九州電力、北海道電力といった
+  電力会社が並んでいる。付帯事業として温浴施設を持つ、あるいは温泉権益を保有するといった理由があるのだろうが、
+  これらの株価が銭湯やサウナの需要で動くことはまずない。
+  </p>
+  <p>
+  テーマ株リストは<strong>「関係がある」と「業績に効く」を区別しない</strong>。
+  本記事で各社の解説にサウナ事業の位置づけを毎回書いているのは、この区別を読者自身が判断できるようにするためである。
+  </p>
+</div>
+
+<h2 id="s7">投資判断で見るべき3つのポイント</h2>
+
+<div class="point">
+  <h4>1. サウナは「集客装置」であって「商品」ではない</h4>
+  <p>
+  掲載企業のほとんどにとって、サウナは本業への送客手段である。
+  ドーミーインは大浴場でホテルを選ばせ、フィットネスクラブはサウナで会員をつなぎとめる。
+  したがって見るべき指標は「サウナの売上」ではなく、<strong>客室稼働率・会員継続率・客単価</strong>といった本業側の数字になる。
+  決算資料でサウナという言葉を探しても、多くの場合は見つからない。
+  </p>
+</div>
+
+<div class="point">
+  <h4>2. 設備層はサウナ以外の需要で動く</h4>
+  <p>
+  ノーリツは住宅着工件数、だいわは外食産業の設備投資、ダイキンは世界の空調需要と為替、
+  TOTOは住宅設備とインバウンド。
+  <strong>いずれもサウナブームより桁の大きい変数によって株価が決まる</strong>。
+  設備層を選ぶなら、サウナはあくまで「追い風のひとつ」と位置づけ、
+  本来の事業環境を主軸に判断すべきである。
+  </p>
+</div>
+
+<div class="point">
+  <h4>3. 優待の実質利回りは条件で大きく変わる</h4>
+  <p>
+  額面上の配当利回りが1%台でも、優待を含めた実質利回りは大きく上振れする場合がある。
+  ただし極楽湯HDのように<strong>1年以上の継続保有が条件</strong>となる例、
+  コシダカHDや共立メンテナンスのように<strong>3年以上で優遇額が増える</strong>例があり、
+  買ってすぐ受け取れるとは限らない。
+  さらに、優待は現金と違って使わなければ価値がゼロになる。
+  自分が実際に通える立地に施設があるかどうかまで確認して、初めて実質利回りの計算が成り立つ。
+  </p>
+</div>
+
+<h2 id="s8">まとめ｜サウナ銘柄は「純度」で選ぶ</h2>
+
+<p>
+サウナに投資したいと考えたとき、選択肢は大きく3つに分かれる。
+</p>
+<p>
+<strong>ブームそのものに賭けたい</strong>なら、運営層のテルマー湯HD(3521)や極楽湯HD(2340)。
+サウナ事業への純度が高く、業績が需要を素直に映す。ただし企業規模が小さく、値動きは荒くなりやすい。
+</p>
+<p>
+<strong>安定した配当を受け取りながら追い風も期待したい</strong>なら、設備層のノーリツ(5943)やだいわ(6459)。
+配当利回りは3.8%台で、PBRも1倍前後。サウナは業績の一部にすぎないが、
+そのぶん温浴市場が冷えても大きく崩れにくい。
+</p>
+<p>
+<strong>優待で実際にサウナへ行きたい</strong>なら、テルマー湯HD、極楽湯HD、セントラルスポーツ(4801)の3社。
+投資額あたりの効率と、自分の生活圏に施設があるかで選ぶことになる。
+</p>
+<p>
+サウナ市場の規模は約2,000億円と、上場企業を動かすには小さい。
+だが1,681万人という利用者の裾野は、温浴・宿泊・フィットネス・アパレルという複数の業界に
+静かに影響を与え続けている。
+<em>サウナ銘柄を読むとは、この影響がどの会社の、どの数字に、どれくらいの純度で現れるかを見極める作業に他ならない。</em>
+</p>
+
+<div class="foot">
+  <h4>データの出典と注意事項</h4>
+  <p>
+  株価・PER(会社予想)・PBR・配当利回り(会社予想)・時価総額は、いずれも2026年8月21日時点でYahoo!ファイナンス各銘柄ページより取得。
+  株主優待の内容は同サイトの優待情報ページに基づく。サウナー人口および市場規模は日本サウナ・温冷浴総合研究所の調査ならびに各種公開推計による。
+  コシダカホールディングスの温浴事業終了は2025年10月23日付の同社適時開示、
+  だいわ(旧・大和冷機工業)の商号変更は2026年2月10日付の同社適時開示による。
+  </p>
+  <p>
+  株価および指標は日々変動する。優待内容・権利確定月・継続保有条件は変更または廃止される場合があるため、
+  投資判断にあたっては必ず各社の公式IR情報および証券会社の最新情報を確認すること。
+  本記事は特定銘柄の売買を推奨するものではなく、投資判断は自己責任で行うこと。
+  </p>
+</div>
+
+</article>
+</div>
